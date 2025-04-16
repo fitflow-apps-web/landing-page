@@ -2423,9 +2423,6 @@ kbd {
     transform: translateX(0);
   }
 }
-.bim-calculation img {
-  animation: moveImage 1.5s ease infinite;
-}
 
 /*--------------------------------------------------------------
 11. Form Control
@@ -4469,27 +4466,6 @@ select.form-select option {
   cursor: pointer;
 }
 
-.bim-calculation {
-  position: relative;
-  z-index: 111;
-}
-.bim-calculation .bim-calculator-img {
-  position: absolute;
-  right: 0;
-  z-index: 1;
-  bottom: 0;
-  max-width: 100%;
-}
-.bim-calculation .bim-calculator-from {
-  position: relative;
-  z-index: 2;
-}
-
-@media screen and (max-width: 1299px) {
-  .bim-calculation .bim-calculator-img {
-    max-height: 500px;
-  }
-}
 @media screen and (max-width: 1199px) {
   .package-content {
     flex-direction: column;
@@ -4525,13 +4501,6 @@ select.form-select option {
   .package-content .package .package-one,
   .package-content .package .package-two {
     border: 1px solid #636363;
-  }
-}
-@media screen and (max-width: 769px) {
-  .bim-calculation .bim-calculator-img {
-    max-height: 620px;
-    left: 0;
-    width: 100%;
   }
 }
 /*--------------------------------------------------------------
