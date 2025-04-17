@@ -702,7 +702,7 @@ kbd {
 
 .ak-primary-bg,
 .ak-primary-bg-hover:hover {
-  background-color: rgba(246, 122, 69, 0.7);
+  background-color: rgba(81, 69, 246, 0.7);
 }
 
 .ak-gradient-bg-1 {
@@ -998,7 +998,7 @@ kbd {
 .btn-animation:hover {
   font-size: 17px !important;
   color: rgba(255, 255, 255, 0.9) !important;
-  background-color: rgba(246, 122, 69, 0.7) !important;
+  background-color: rgba(69, 95, 246, 0.7) !important;
   transform: translate3d(0, -8px, 0.01px);
 }
 
@@ -2218,13 +2218,13 @@ kbd {
   display: block;
   height: 1px;
   width: 100%;
-  background-color: rgba(213, 189, 162, 0.15);
+  background-color: rgba(162, 188, 213, 0.15);
 }
 .footer .border-footer-2 {
   display: block;
   height: 1px;
   width: 100%;
-  background-color: rgba(213, 189, 162, 0.15);
+  background-color: rgba(162, 188, 213, 0.15);
   position: absolute;
   top: 80%;
 }
@@ -2232,7 +2232,7 @@ kbd {
 .footer.style-1 > * {
   max-width: 439px;
   flex: 0 0 auto;
-  border-left: 1px solid rgba(213, 189, 162, 0.15);
+  border-left: 1px solid rgba(162, 186, 213, 0.15);
   padding: 50px;
   padding-bottom: 135px;
 }
@@ -2279,7 +2279,7 @@ kbd {
 }
 .footer.style-1 .logo-footer {
   max-width: 410px;
-  border-right: 1px solid rgba(213, 189, 162, 0.15);
+  border-right: 1px solid rgba(162, 186, 213, 0.15);
 }
 .footer.style-1 .logo-footer .logo {
   margin-bottom: 10px;
@@ -2349,78 +2349,7 @@ kbd {
     flex-direction: column;
   }
 }
-/*--------------------------------------------------------------
-10. Sidebar
-----------------------------------------------------------------*/
-@media screen and (min-width: 991px) {
-  #sidebarWrap {
-    height: auto;
-    width: 420px;
-    float: right;
-    position: relative;
-    box-shadow: none;
-    border: none;
-    margin: 0;
-    padding: 0;
-  }
-  #content {
-    width: 850px;
-    height: auto;
-  }
-  #sidebar {
-    width: 400px;
-    height: auto;
-    position: absolute;
-    z-index: 1111;
-  }
-  #sidebar.fixed {
-    position: fixed;
-    top: 0;
-  }
-}
-@media screen and (max-width: 1399px) {
-  #content {
-    width: 650px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  #sidebarWrap {
-    width: 345px;
-  }
-  #content {
-    width: 550px;
-  }
-  #sidebar {
-    width: 350px;
-  }
-}
-@media screen and (max-width: 990px) {
-  .classespages-details-content {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 80px;
-  }
-  #sidebarWrap {
-    width: 100%;
-  }
-  #content {
-    width: 100%;
-  }
-  #sidebar {
-    width: 100%;
-  }
-}
-@keyframes moveImage {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(50px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
+
 
 /*--------------------------------------------------------------
 11. Form Control
@@ -3317,156 +3246,7 @@ select.form-select option {
     max-width: 100%;
   }
 }
-/*--------------------------------------------------------------
-  17. Classes
-----------------------------------------------------------------*/
-.classes-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  max-height: 500px;
-  word-wrap: break-word;
-  background-clip: border-box;
-  text-transform: uppercase;
-  overflow: hidden;
-  cursor: pointer;
-  padding: 0;
-}
-.classes-card .classes-img-overlay {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 30px;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  z-index: 12;
-  fill: rgba(246, 122, 69, 0.15);
-  background: rgba(246, 122, 69, 0.1);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  -webkit-clip-path: polygon(0% -0.75%, 100% 75.25%, 100% 100%, 100% 100%, 0% 100%);
-          clip-path: polygon(0% -0.75%, 100% 75.25%, 100% 100%, 100% 100%, 0% 100%);
-}
-.classes-card .classes-img-overlay .classes-text {
-  font-family: var(--heading-font-family);
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 100%;
-  color: var(--body-color);
-}
-.classes-card .classes-img-overlay::before {
-  position: absolute;
-  content: "";
-  right: 0;
-  bottom: 0;
-  z-index: -11;
-  left: 0;
-  width: 100%;
-  height: 0%;
-  fill: rgba(246, 122, 69, 0.15);
-  background: rgba(246, 122, 69, 0.1);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  -webkit-clip-path: polygon(0% -0.75%, 100% 75.25%, 100% 100%, 100% 100%, 0% 100%);
-          clip-path: polygon(0% -0.75%, 100% 75.25%, 100% 100%, 100% 100%, 0% 100%);
-  transition: all 0.3s linear;
-}
-.classes-card:hover .classes-img-overlay::before {
-  height: 100%;
-  background: #007BFF;
-}
-.classes-card .card-img {
-  transition: transform 0.5s ease;
-}
-.classes-card:hover > .card-img {
-  transform: scale(1.2) rotate(10deg);
-}
 
-.classes-details-title-img.style1 {
-  width: 100vw;
-  display: flex;
-  gap: 60px;
-  align-items: center;
-}
-.classes-details-title-img.style1 .classes-details-title-info {
-  max-width: 558px;
-  flex-grow: 1;
-}
-.classes-details-title-img.style1 .classes-details-title-info .classes-details-title {
-  font-size: 60px;
-  font-weight: 600;
-  text-transform: uppercase;
-  line-height: 100%;
-}
-.classes-details-title-img.style1 .classes-details-title-info .classes-details-desp {
-  font-size: 18px;
-  line-height: 27px;
-  margin-bottom: 50px;
-}
-.classes-details-title-img.style1 .classes-details-img-content {
-  flex-grow: 1;
-}
-.classes-details-title-img.style1 .classes-details-img-content .classes-details-img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  min-height: 300px;
-}
-.classes-details-title-img.style1 .schedule-duration {
-  display: flex;
-  gap: 50px;
-  align-items: center;
-  margin-top: 50px;
-}
-.classes-details-title-img.style1 .schedule-duration .schedule-divider {
-  width: 1px;
-  height: 70px;
-  flex-shrink: 0;
-  background: var(--Extra, #a7d1d2);
-}
-.classes-details-title-img.style1 .schedule-duration .schedule .desp,
-.classes-details-title-img.style1 .schedule-duration .duration .desp {
-  font-size: 18px;
-}
-.classes-details-title-img.style1 .schedule-duration .schedule .title,
-.classes-details-title-img.style1 .schedule-duration .duration .title {
-  font-size: 24px;
-}
-
-.classespages-details-content.style1 .details-content .title {
-  font-size: 60px;
-  line-height: 100%;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-@media screen and (max-width: 991px) {
-  .classes-details-title-img.style1 {
-    flex-direction: column-reverse;
-    width: 100%;
-    align-items: flex-start;
-  }
-  .classes-details-title-img.style1 .classes-details-title-info .classes-details-desp {
-    margin-bottom: 30px;
-  }
-  .classes-details-title-img.style1 .schedule-duration {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    margin-top: 30px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .classespages-details-content.style1 .details-content .title {
-    font-size: 38px;
-    text-transform: uppercase;
-  }
-}
 /*--------------------------------------------------------------
   18. Counter Funfact
 ----------------------------------------------------------------*/
