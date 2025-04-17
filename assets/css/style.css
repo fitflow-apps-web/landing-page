@@ -3407,19 +3407,6 @@ select.form-select option {
   width: 73px;
 }
 
-.trainer-details {
-  display: flex;
-  gap: 83px;
-}
-.trainer-details .trainer-details-img {
-  width: 438px;
-  max-width: 100%;
-}
-.trainer-details .trainer-content {
-  width: 757px;
-  max-width: 100%;
-}
-
 .all-badge {
   display: flex;
   justify-content: space-between;
@@ -3466,10 +3453,7 @@ select.form-select option {
   .team-content > * {
     width: 47%;
   }
-  .trainer-details {
-    flex-wrap: wrap;
-    gap: 50px;
-  }
+
 }
 @media screen and (max-width: 767px) {
   .team-content > * {
